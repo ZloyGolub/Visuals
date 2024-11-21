@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 /* Body Styling */
@@ -78,6 +81,7 @@ video, img {
     width: 100%;
     max-width: 640px;
     height: auto;
+    border-radius: 15px;
 }
 
 
@@ -94,3 +98,48 @@ a:hover {
     background-color: #000000; /* Background color on hover */
     color: #007BFF; /* Text color change on hover */
 }
+
+/* Toggle Button Styling */
+#toggle-mode {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #1252a5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.5s, color 0.5s;
+    font-size: 16px;
+    z-index: 1000; /* Ensures it stays above other elements */
+}
+
+#toggle-mode.night-mode {
+    background: #1252a5;
+    color: black;
+}
+
+#toggle-mode:hover {
+    background: #010041;
+    color: #ffffff;
+}
+
+/* Night Mode Styles */
+body.night-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header.night-mode {
+    background-color: #1c1c1c;
+}
+
+footer.night-mode {
+    background-color: #1c1c1c;
+}
+
+a.night-mode {
+    color: #007BFF;
+}
+
