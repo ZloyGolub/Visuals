@@ -8,8 +8,13 @@
     font-style: normal;
 }
 
+/* html {
+    scroll-behavior: smooth;
+} */
+
 /* Body Styling */
 body {
+    padding-top: 60px;
     font-family: Arial, consolas;
     line-height: 1.6;
     color: #000000;
@@ -19,6 +24,10 @@ body {
 
 /* Header Styling */
 header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    margin: 0;
     font-size: 20px;
     font: bold;
     font-style: italic;
